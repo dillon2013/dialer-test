@@ -1,0 +1,15 @@
+div {
+  background-color: #242e3e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  height: 20px;
+}
+
+@media (min-width: 600px) {
+  div {
+    padding: 40px 20px;
+    font-size: 2rem;
+    height: 75px;
+  }
+}

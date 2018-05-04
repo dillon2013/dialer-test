@@ -1,0 +1,18 @@
+<app-display
+  [callInProgress]="callInProgress"
+  [number]="number">
+</app-display>
+<app-keypad
+  [callInProgress]="callInProgress"
+  [number]="number"
+  (keypadComponentCall)="onToggleCall($event)"
+  (keypadComponentDial)="onDial($event)"
+  (keypadComponentDeleteNum)="onDelete($event)">
+</app-keypad>
+
+<h4>Call History</h4>
+<ul>
+  <li *ngFor="let calledNumber of callList">
+    {{calledNumber}}
+  </li>
+</ul>
